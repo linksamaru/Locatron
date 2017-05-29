@@ -1,0 +1,28 @@
+<md-card>
+<md-grid-list cols="2" rowHeight="90px">
+	<md-grid-tile rowspan="1" colspan="2">
+		<h1>Locatron. Tu buscador de profesionales.</h1>
+	</md-grid-tile>
+	<md-grid-tile rowspan="1" colspan="1">
+		<md-select placeholder="Profesion">
+			<md-option *ngFor="let prof of profesiones" [value]="prof.val">{{prof.nombre}}</md-option>
+		</md-select>
+	</md-grid-tile>
+	<md-grid-tile rowspan="1" colspan="1">
+		<md-input-container>
+			<input mdInput placeholder="Localidad">
+		</md-input-container>
+	</md-grid-tile>
+	<md-grid-tile rowspan="1" colspan="2">
+		<span mdTooltip="Selecciona la distancia">
+			<md-slider min="0" max="50" step="1"></md-slider>
+		</span>
+	</md-grid-tile>
+	<md-grid-tile rowspan="1" colspan="2">
+		<button md-raised-button routerLink="/listado" routerLinkActive="active" color="primary">
+			Buscar
+		</button>
+	</md-grid-tile>
+</md-grid-list>
+</md-card>
+<registro></registro>

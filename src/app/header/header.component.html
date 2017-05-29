@@ -1,0 +1,10 @@
+<md-toolbar>
+  <button md-button routerLink="/" routerLinkActive="active">Locatron</button>
+	<md-input-container>
+  		<input mdInput placeholder="Usuario" type="text" #user>
+	</md-input-container>
+	<md-input-container>
+  		<input mdInput placeholder="Contraseña" type="password" #pass>
+	</md-input-container>
+	<button md-button (click)="comprobarCredenciales(pass.value,user.value)" >Entrar</button>
+</md-toolbar>

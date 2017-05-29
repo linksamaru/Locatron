@@ -1,0 +1,28 @@
+{
+  "usuarios" : [{
+    "nombre": "Alberto Rodriguez",
+    "usuario": "Arodri",
+    "password": "Peperez",
+    "citas": [ {
+      "profesional": "Elena Martinez Santos",
+      "profesion": "dentista",
+      "dia": "sabado_10",
+      "hora": "11:00"
+    }, {
+      "profesional": "Pablo Blanco Ortiz",
+      "profesion": "oculista",
+      "dia": "sabado_10",
+      "hora": "17:00"
+    }]
+  },{
+    "nombre": "Rosario Martinez Seca",
+    "usuario": "Rosita13",
+    "password": "floresRosas",
+    "citas": [ {
+      "profesional": "Elena Martinez Santos",
+      "profesion": "dentista",
+      "dia": "sabado_11",
+      "hora": "13:30"
+    }]
+  }
+]}

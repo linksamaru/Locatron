@@ -1,0 +1,25 @@
+<md-card>
+	<md-grid-list cols="2" rowHeight="40px">
+		<md-grid-tile colspan="2" rowspan="1">
+			<h2>Concertar cita con:</h2>
+		</md-grid-tile>
+		<md-grid-tile colspan="1" rowspan="1">
+			Profesional: {{prof.nombre}}
+		</md-grid-tile>
+		<md-grid-tile colspan="1" rowspan="1">
+			Localidad: {{prof.localidad}}
+		</md-grid-tile>
+		<md-grid-tile colspan="1" rowspan="1">
+			Dia: {{prof.dia}}
+		</md-grid-tile>
+		<md-grid-tile colspan="1" rowspan="1">
+			Hora: {{prof.hora}}
+		</md-grid-tile>
+		<md-grid-tile colspan="1" rowspan="1">
+			<button md-button routerLink="/calendario">Aceptar</button>
+		</md-grid-tile>
+		<md-grid-tile colspan="1" rowspan="1">
+			<button md-raised-button routerLink="/">Cancelar</button>
+		</md-grid-tile>
+	</md-grid-list>
+</md-card>

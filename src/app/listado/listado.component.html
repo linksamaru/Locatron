@@ -1,0 +1,9 @@
+<md-card>
+	<h3>Listado de:</h3>
+	Profesion: {{profesional.profesion}} Localidad: {{profesional.localidad}}
+</md-card>
+<md-list>
+	<md-list-item *ngFor="let profs of prof">
+			{{profs.nombre}} <button md-raised-button color="primary">Cita</button><button md-raised-button>Cancelar</button>
+	</md-list-item>
+</md-list>
