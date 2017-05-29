@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Buscador de Profesionales</title>
+	</head>
+	<body>
+		<h1>Listado provisional de profesionales</h1>
+		<ul>
+			{{#each profesional as |profesional1|}}
+			<li>
+				{{profesional1.nombre}}<br>
+				{{profesional1.profesion}}<br>
+				Localidad: {{profesional1.localidad}}
+			</li>
+			{{/each}}
+		</ul>
+	</body>
+</html>

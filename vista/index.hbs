@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Locatron, el buscador de Megatron</title>
+	</head>
+	<body>
+		<div class="container">
+			<div id="titulo">
+				<a href="index.html"><img src="css/images/logo.jpg" alt="logo del buscador de profesionales"></a><span class="hidden">Logo corporativo del buscador de profesionales</span>
+			</div>
+			<div id="buscador">
+				<div id="parametros">
+					<h2>Busque su profesional:</h2>
+					<form id="buscador" method="post" action='./listado'>
+					<label>Profesional: <br>
+						<select id="form-tipo-profesional" name="profesion">
+							{{#each profesiones as |profesion|}}
+							<option value="{{profesion.nombre}}"> {{profesion.nombre}}</option>
+							{{/each}}
+						</select>
+					</label>
+					<label>Localidad: <br>
+						<input type="text" id="form-localidad">
+					</label>
+					<label>Distancia:<br>
+					<input type="range" id="form-distancia" min="0" max="50" step="1">
+					</label>
+				</div>
+				<input type="submit" value="Buscar" class="boton" />
+				</form>
+			</div>
+			<div id="AccReg">
+				<div id="DivAcceso">
+                                    <a href="identificacionUsuario.html" id="acceso" class="boton">Acceder</a>
+				</div>
+				<div id="DivRegistro">
+					<h4>&iquest;Eres nuev@?</h4>
+					<a href="registro.html" id="registro" class="boton">Registro</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

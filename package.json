@@ -1,0 +1,20 @@
+{
+  "name": "serverExpress",
+  "version": "1.0.0",
+  "description": "server rest para locatron angular2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Davila Marcos & Criado San Miguel Luis",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.6",
+    "nodemon": "^1.11.0"
+  },
+  "engines":{
+	"node":"6.10.0"
+  }
+}

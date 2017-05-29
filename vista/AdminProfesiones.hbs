@@ -1,0 +1,33 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+	<h2>Lista de profesiones:</h2>
+	<form action ="">
+		<table>
+		<th>Nombre
+		</th>
+		<th>Nuevo Nombre
+		</th>
+		{{#each profesiones as |profesion|}}
+		<tr>
+			
+							<td>
+							{{profesion.nombre}}
+							</td>
+							<td><input id="{{profesion.id}}" type="text"/></td>
+							<td><input type="submit" value="modificar"/></td>
+							<td><input type="submit" value="suprimir"/></td>
+		</tr>
+		{{/each}}
+		</table>
+		</form>
+
+		<h2>Anadir nueva profesion</h2>
+		<form  action="http://localhost:8080/profesionesAdmin" method="POST">
+		
+			<input type="text"/> <input type="submit" value="anadir"/>
+		</form>
+	</body>
+</html>
